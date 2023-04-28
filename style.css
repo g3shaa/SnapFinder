@@ -1,12 +1,18 @@
+@import url('https://fonts.cdnfonts.com/css/blue-rays');
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+@font-face {
+  font-family: Dark Twenty;
+  src: url(DarkTwenty.otf);
+}
+
 body {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-family: Dark Twenty;                             
   line-height: 1.42857143;
   color: #fff;
   background-color: #36393F;
@@ -41,7 +47,7 @@ label {
 }
 
 input[type="text"] {
-  font-size: 16px;
+  font-size: 25px;
   padding: 10px;
   border: none;
   background-color: #2F3136;
@@ -50,8 +56,10 @@ input[type="text"] {
 }
 
 button[type="submit"] {
-  font-size: 16px;
+  font-family: Dark Twenty;
+  font-size: 25px;
   padding: 10px 20px;
+  margin: 10px;
   background-color: #7289DA;
   color: #fff;
   border: none;
