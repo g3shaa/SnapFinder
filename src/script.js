@@ -10,17 +10,17 @@ form.addEventListener('submit', (e) => {
     const query = input.value;
 
     fetch(`https://api.pexels.com/v1/search?query=${query}&per_page=24`, {
-        headers: {
-            Authorization: apiKey
-        }
-    })
+            headers: {
+                Authorization: apiKey
+            }
+        })
         .then(response => response.json())
         .then(data => {
             const photos = data.photos;
             if (photos.length > 0) {
                 const resultsHTML = photos.map(photo => `
             <div class="photo">
-              <img src="${photo.src.medium}" alt="${photo.photographer}">
+            <img src="${photo.src.medium}" alt="${photo.photographer}">
             </div>
           `).join('');
                 container.innerHTML = resultsHTML;
@@ -47,3 +47,4 @@ form.addEventListener('submit', (e) => {
         })
         .catch(error => console.error(error));
 });
+
