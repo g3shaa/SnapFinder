@@ -1,4 +1,4 @@
-const apiKey = 'be4aef9778e43be04430bdec093112a3';
+const apiKey = 'YOUR-FLICKR-API';
 
 const form = document.getElementById('search-form');
 const input = document.getElementById('search-input');
